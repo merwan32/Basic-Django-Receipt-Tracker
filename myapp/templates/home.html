@@ -1,0 +1,11 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="home-content">
+    <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+    <h2 class="welcome-text">Welcome to <br> <span>Basic Django Receipt Tracker</span></h2>
+</div>
+{% endblock %}

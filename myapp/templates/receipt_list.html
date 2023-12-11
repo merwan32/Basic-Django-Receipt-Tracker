@@ -1,0 +1,13 @@
+<!-- receipt_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>My Receipts</h2>
+    {% for receipt in receipts %}
+        <div class="card">
+            <h2>{{ receipt.store_name }}</h2>
+            <p>{{ receipt.date_of_purchase }}</p>
+            <a href="{% url 'receipt-detail' receipt.id %}"> see details </a></li>
+        </div>
+    {% endfor %}
+{% endblock %}

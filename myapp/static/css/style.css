@@ -1,0 +1,72 @@
+/* static/css/styles.css */
+body {
+    font-family: 'Inter',sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.home-content{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-text{
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+}
+.welcome-text span {
+    color: rgb(89 78 241);
+}
+
+.logo {
+    width: 350px; 
+    height: auto;
+}
+
+
+nav {
+    width: 80%;
+    box-shadow: 8px 8px 24px 0 #a5a5a5;
+    border-radius: 16px;
+    padding: 8px 16px ;
+    margin: 32px auto 64px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    color: rgb(89 78 241);
+    text-align: center;
+}
+
+body > div{
+    width: 80%;
+    margin: auto;
+}
+.card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(89, 78, 241, 0.369);
+    border-radius: 16px;
+}
+h5, h4{
+    text-align: center;
+}

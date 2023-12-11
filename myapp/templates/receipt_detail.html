@@ -1,0 +1,10 @@
+<!-- receipt_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{{ receipt.store_name }} - {{ receipt.date_of_purchase }}</h2>
+  <h4>Items: {{ receipt.item_list }}</h4>
+  <h5>Total Amount: {{ receipt.total_amount }}</h5>
+  <h5><a href="{% url 'receipt-edit' receipt.id %}"> Edit </a></li></h5>
+
+{% endblock %}

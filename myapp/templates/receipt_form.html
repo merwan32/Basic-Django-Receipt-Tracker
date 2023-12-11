@@ -1,0 +1,11 @@
+<!-- receipt_form.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{% if form.instance.id %}Edit Receipt{% else %}New Receipt{% endif %}</h2>
+  <form method="post" action="{% if form.instance.id %}{% url 'receipt-edit' form.instance.id %}{% else %}{% url 'receipt-create' %}{% endif %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+{% endblock %}
